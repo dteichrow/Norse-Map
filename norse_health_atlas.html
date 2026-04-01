@@ -3,56 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Norse World Health Atlas</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&display=swap">
     <style>
-        body { font-family: 'EB Garamond', serif; }
-        .dark-theme { background-color: #121212; color: #ffffff; }
-        .light-theme { background-color: #ffffff; color: #000000; }
-        /* additional styles for sidebar, filters, etc. */
+        body {
+            font-family: 'Cinzel', serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        :root {
+            --background-color: #f0f0f0;
+            --text-color: #333;
+        }
+        .dark-mode {
+            --background-color: #333;
+            --text-color: #f0f0f0;
+        }
+        .map-container {
+            height: 600px;
+        }
+        /* Additional CSS styles for layout and functionality */
     </style>
+    <title>Norse World Health Atlas</title>
 </head>
 <body>
-    <header>
-        <h1>Norse World Health Atlas</h1>
-        <button id="theme-toggle">Toggle Dark/Light Theme</button>
-    </header>
-    <aside id="sidebar">
-        <h2>Site Details</h2>
-        <div id="site-info"></div>
-    </aside>
-    <main>
+    <div id="map" class="map-container"></div>
+    <div id="side-panel">
         <h2>Viking Age Health Sites</h2>
-        <div>
-            <label for="region-filter">Choose a region:</label>
-            <select id="region-filter">
-                <option value="all">All</option>
-                <option value="scandinavia">Scandinavia</option>
-                <option value="iceland">Iceland</option>
-                <option value="greenland">Greenland</option>
-                <option value="n-atlantic">N. Atlantic</option>
-                <option value="british-isles">British Isles</option>
-                <option value="eastern-routes">Eastern Routes</option>
-                <option value="normandy">Normandy</option>
-                <option value="iberia">Iberia</option>
-            </select>
-        </div>
-        <div id="map"></div>
-        <div id="legend">
-            <h3>Legend</h3>
-            <!-- legend showing regions and evidence density -->
-        </div>
-        <div id="trade-routes">
-            <!-- Visualization of trade routes -->
-        </div>
-    </main>
+        <div id="site-details"></div>
+    </div>
+    <button id="theme-toggle">Toggle Dark/Light Mode</button>
     <script>
-        // JavaScript for handling theme toggle, filters, collapsible panels, and other interactivity
-        document.getElementById('theme-toggle').addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-            document.body.classList.toggle('light-theme');
+        const healthSites = [
+            'Ribe', 'Birka', 'Varnhem', 'Hedeby', 'Kaupang', 'Kopparsvik', 'Trondheim',
+            'Hrísbrú', 'Western Settlement', 'Eastern Settlement', 'Faroe Islands',
+            'L\'Anse aux Meadows', 'Dublin', 'York', 'Orkney Islands', 'Oxford',
+            'Rouen', 'Staraya Ladoga', 'Novgorod', 'Kyiv', 'Constantinople',
+            'A Coruña', 'Lisbon', 'Seville', 'Strait of Gibraltar'
+        ];
+        const map = L.map('map').setView([60, 10], 4);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 18}).addTo(map);
+        // Add markers and other functionalities here
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
         });
-        // more interactivity code...
+        // Additional JavaScript functionalities for interactivity
     </script>
 </body>
 </html>
