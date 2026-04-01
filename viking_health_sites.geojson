@@ -1,0 +1,555 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.77,55.33 ]
+    },
+    "properties": {
+    "site_name":"Ribe",
+    "region":"Core Scandinavia",
+    "subregion":"Denmark",
+    "site_type":"Emporium/Urban",
+    "evidence_density":5,
+    "key_health_finding":"943-skeleton paleodemographic study; mean adult age at death 38.5M/38.6F",
+    "primary_evidence_type":"Osteology/Paleodemography",
+    "dietary_profile":"Terrestrial/Mixed",
+    "violence_level":"Moderate (judicial)",
+    "notable_pathogen":"",
+    "population_estimate":"400–800",
+    "period_active":"700–1100",
+    "notes":"Most rigorous Viking Age paleodemographic dataset"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 17.55,59.33 ]
+    },
+    "properties": {
+    "site_name":"Birka",
+    "region":"Core Scandinavia",
+    "subregion":"Sweden",
+    "site_type":"Emporium/Urban",
+    "evidence_density":5,
+    "key_health_finding":"3,000+ graves; confirmed female warrior Bj 581 (no combat trauma); major aDNA/isotope work",
+    "primary_evidence_type":"Osteology/aDNA/Isotope",
+    "dietary_profile":"Mixed",
+    "violence_level":"Low-Moderate (few combat injuries in assemblage)",
+    "notable_pathogen":"",
+    "population_estimate":"700–1000",
+    "period_active":"750–975",
+    "notes":"Bj 581 female warrior; high geographic mobility of residents"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.68,58.38 ]
+    },
+    "properties": {
+    "site_name":"Varnhem",
+    "region":"Core Scandinavia",
+    "subregion":"Sweden",
+    "site_type":"Rural/Monastic Transition",
+    "evidence_density":5,
+    "key_health_finding":"49% carious lesions; 13% teeth affected; CT scans show sinusitis, ear infection, osteoarthritis",
+    "primary_evidence_type":"Osteology/Dental/CT",
+    "dietary_profile":"Terrestrial/Grain-heavy",
+    "violence_level":"Low-Moderate",
+    "notable_pathogen":"Dental abscess, chronic sinusitis",
+    "population_estimate":"",
+    "period_active":"900–1200",
+    "notes":"Bertilsson et al. 2023 (PLoS ONE); 2025 CT skull study"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.57,54.49 ]
+    },
+    "properties": {
+    "site_name":"Hedeby (Haithabu)",
+    "region":"Core Scandinavia",
+    "subregion":"Denmark/Germany border",
+    "site_type":"Emporium/Urban",
+    "evidence_density":4,
+    "key_health_finding":"Major trade hub; crowding and livestock proximity; zoonotic disease exposure likely",
+    "primary_evidence_type":"Settlement Archaeology",
+    "dietary_profile":"Mixed",
+    "violence_level":"Moderate",
+    "notable_pathogen":"Intestinal parasites (inferred)",
+    "population_estimate":"1000–1500",
+    "period_active":"770–1050",
+    "notes":"One of the largest Viking Age emporia"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.3,59.06 ]
+    },
+    "properties": {
+    "site_name":"Kaupang",
+    "region":"Core Scandinavia",
+    "subregion":"Norway",
+    "site_type":"Emporium/Urban",
+    "evidence_density":3,
+    "key_health_finding":"Cemetery revisited; isotope evidence of geographic mobility; trade-route pathogen exposure",
+    "primary_evidence_type":"Burial Archaeology/Isotope",
+    "dietary_profile":"Marine/Mixed",
+    "violence_level":"Moderate",
+    "notable_pathogen":"",
+    "population_estimate":"200–500",
+    "period_active":"800–950",
+    "notes":"Smallest major emporium; Vestfold Norway"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.29,57.64 ]
+    },
+    "properties": {
+    "site_name":"Kopparsvik",
+    "region":"Core Scandinavia",
+    "subregion":"Sweden (Gotland)",
+    "site_type":"Cemetery",
+    "evidence_density":3,
+    "key_health_finding":"14/18 individuals with carious lesions; dental pathology confirming Varnhem pattern",
+    "primary_evidence_type":"Osteology/Dental",
+    "dietary_profile":"Mixed/Marine",
+    "violence_level":"Low-Moderate",
+    "notable_pathogen":"Dental caries, abscess",
+    "population_estimate":"",
+    "period_active":"900–1100",
+    "notes":"Gotland — major trading island"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.39,63.43 ]
+    },
+    "properties": {
+    "site_name":"Trondheim (Nidaros)",
+    "region":"Core Scandinavia",
+    "subregion":"Norway",
+    "site_type":"Urban/Royal Center",
+    "evidence_density":3,
+    "key_health_finding":"Skeletal evidence of treponemal disease; TB documented in medieval Norwegian sample",
+    "primary_evidence_type":"Osteology",
+    "dietary_profile":"Marine/Mixed",
+    "violence_level":"High (Norway context)",
+    "notable_pathogen":"Treponemal disease, TB",
+    "population_estimate":"",
+    "period_active":"900–1200",
+    "notes":"Norwegian high-violence context; Jacobson et al. regional data"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -21.7,64.15 ]
+    },
+    "properties": {
+    "site_name":"Hrísbrú (Mosfell Valley)",
+    "region":"Iceland",
+    "subregion":"Iceland",
+    "site_type":"Farmstead",
+    "evidence_density":4,
+    "key_health_finding":"~25% skeletal prevalence of TB lesions; heavy labor entheseal changes; food insecurity",
+    "primary_evidence_type":"Osteology/Isotope/aDNA",
+    "dietary_profile":"Terrestrial/Marine Mixed",
+    "violence_level":"Low-Moderate",
+    "notable_pathogen":"Tuberculosis (epidemic-level)",
+    "population_estimate":"50–200 (valley)",
+    "period_active":"874–1200",
+    "notes":"Mosfell Archaeological Project; best-studied Icelandic Viking Age site"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -51.4,64.8 ]
+    },
+    "properties": {
+    "site_name":"Western Settlement (Sandnes)",
+    "region":"Greenland",
+    "subregion":"Greenland",
+    "site_type":"Colony/Farmstead",
+    "evidence_density":3,
+    "key_health_finding":"Abandoned ~1350–1400 CE; climate-driven; isotope evidence of increasing seal diet",
+    "primary_evidence_type":"Isotope/Zooarchaeology",
+    "dietary_profile":"Marine-dominant (50–80% seal)",
+    "violence_level":"Low (internal)",
+    "notable_pathogen":"",
+    "population_estimate":"400–700",
+    "period_active":"985–1400",
+    "notes":"First settlement to collapse; Little Ice Age context"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -45.51,61.12 ]
+    },
+    "properties": {
+    "site_name":"Eastern Settlement (Brattahlíð)",
+    "region":"Greenland",
+    "subregion":"Greenland",
+    "site_type":"Colony/Farmstead",
+    "evidence_density":4,
+    "key_health_finding":"80 skeletons isotope-analyzed; 50–80% marine diet; pastoral identity vs. dietary reality divergence",
+    "primary_evidence_type":"Isotope/Osteology",
+    "dietary_profile":"Marine-dominant (50–80% seal)",
+    "violence_level":"Low",
+    "notable_pathogen":"",
+    "population_estimate":"2000–4000 (peak)",
+    "period_active":"985–1450",
+    "notes":"Largest Greenlandic settlement; Arneborg isotope study"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.8,62.0 ]
+    },
+    "properties": {
+    "site_name":"Faroe Islands",
+    "region":"North Atlantic",
+    "subregion":"Faroe Islands",
+    "site_type":"Settlement",
+    "evidence_density":2,
+    "key_health_finding":"Stepping-stone settlement; limited osteological study",
+    "primary_evidence_type":"Settlement Archaeology",
+    "dietary_profile":"Marine/Pastoral Mixed",
+    "violence_level":"Low",
+    "notable_pathogen":"",
+    "population_estimate":"500–2000",
+    "period_active":"800–1100",
+    "notes":"Norse colonization ca. 800 CE; previously Irish hermit settlement"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -55.52,51.6 ]
+    },
+    "properties": {
+    "site_name":"L'Anse aux Meadows",
+    "region":"North Atlantic",
+    "subregion":"Vinland (Newfoundland)",
+    "site_type":"Temporary Settlement",
+    "evidence_density":1,
+    "key_health_finding":"Short-lived occupation; no osteological record; logistical disease exposure from long voyage",
+    "primary_evidence_type":"Settlement Archaeology",
+    "dietary_profile":"Unknown",
+    "violence_level":"Unknown (conflict with indigenous peoples recorded in sagas)",
+    "notable_pathogen":"",
+    "population_estimate":"30–100 (temporary)",
+    "period_active":"1000–1020",
+    "notes":"Only confirmed Norse site in the Americas; UNESCO World Heritage"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.25,53.33 ]
+    },
+    "properties": {
+    "site_name":"Dublin (Dyflin)",
+    "region":"British Isles",
+    "subregion":"Ireland",
+    "site_type":"Emporium/Urban",
+    "evidence_density":4,
+    "key_health_finding":"Norse-origin M. leprae strains; Scandinavian isotope signatures in leprosy cases",
+    "primary_evidence_type":"aDNA/Isotope (leprosy)",
+    "dietary_profile":"Mixed",
+    "violence_level":"High (Viking raiding base)",
+    "notable_pathogen":"Leprosy (Scandinavian Type 3 strain)",
+    "population_estimate":"2000–5000",
+    "period_active":"841–1170",
+    "notes":"QUB/Southampton leprosy origins study; Norse long-ship base"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.08,53.96 ]
+    },
+    "properties": {
+    "site_name":"York (Jorvik)",
+    "region":"British Isles",
+    "subregion":"England",
+    "site_type":"Emporium/Urban",
+    "evidence_density":4,
+    "key_health_finding":"Coppergate excavations: intestinal parasites (whipworm, roundworm) in Viking Age latrine deposits",
+    "primary_evidence_type":"Environmental Archaeology/Parasitology",
+    "dietary_profile":"Mixed/Terrestrial",
+    "violence_level":"Moderate",
+    "notable_pathogen":"Intestinal parasites (direct evidence)",
+    "population_estimate":"10000–15000",
+    "period_active":"866–954",
+    "notes":"Jorvik Viking Centre; Coppergate excavation; parasite evidence"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.0,59.0 ]
+    },
+    "properties": {
+    "site_name":"Orkney Islands",
+    "region":"British Isles",
+    "subregion":"Scotland",
+    "site_type":"Settlement/Farming",
+    "evidence_density":3,
+    "key_health_finding":"Highest marine isotope values of any post-Mesolithic UK population; sex-differentiated diet (males more marine)",
+    "primary_evidence_type":"Isotope",
+    "dietary_profile":"Marine-dominant",
+    "violence_level":"Low-Moderate",
+    "notable_pathogen":"",
+    "population_estimate":"",
+    "period_active":"800–1150",
+    "notes":"Extreme marine diet; Norse settlers replaced Pictish population"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.25,51.75 ]
+    },
+    "properties": {
+    "site_name":"Oxford (St. Brice's Day)",
+    "region":"British Isles",
+    "subregion":"England",
+    "site_type":"Massacre Burial",
+    "evidence_density":3,
+    "key_health_finding":"Smallpox (VARV) aDNA recovered from massacre victims (1002 CE); Viking carriers of extinct smallpox strain",
+    "primary_evidence_type":"aDNA (Variola virus)",
+    "dietary_profile":"Mixed",
+    "violence_level":"High (massacre site)",
+    "notable_pathogen":"Variola virus (smallpox — extinct clade)",
+    "population_estimate":"",
+    "period_active":"1002 (single event)",
+    "notes":"Mühlemann et al. 2020; St. Brice's Day massacre ordered by Æthelred II"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.1,49.44 ]
+    },
+    "properties": {
+    "site_name":"Rouen (Normandy)",
+    "region":"Western Europe",
+    "subregion":"France",
+    "site_type":"Settlement/Duchy",
+    "evidence_density":2,
+    "key_health_finding":"Norse settler integration; limited Viking Age osteological study; leprosy common in Norman period",
+    "primary_evidence_type":"Historical/Limited Osteology",
+    "dietary_profile":"Mixed/Terrestrial",
+    "violence_level":"Moderate",
+    "notable_pathogen":"Leprosy (medieval Norman period)",
+    "population_estimate":"",
+    "period_active":"911–1066",
+    "notes":"Duchy of Normandy founded 911 CE; Rollo settlement"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.3,60.0 ]
+    },
+    "properties": {
+    "site_name":"Staraya Ladoga (Aldeigja)",
+    "region":"Eastern Routes",
+    "subregion":"Russia",
+    "site_type":"Trade Route Node",
+    "evidence_density":2,
+    "key_health_finding":"Earliest Scandinavian presence in the east; crossroads pathogen exposure from steppe/Baltic/Nordic zones",
+    "primary_evidence_type":"Settlement Archaeology",
+    "dietary_profile":"Mixed",
+    "violence_level":"Moderate",
+    "notable_pathogen":"",
+    "population_estimate":"",
+    "period_active":"750–950",
+    "notes":"First major Rus settlement; gateway to eastern trade routes"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.28,58.52 ]
+    },
+    "properties": {
+    "site_name":"Novgorod (Holmgarðr)",
+    "region":"Eastern Routes",
+    "subregion":"Russia",
+    "site_type":"Trade Route Node/Urban",
+    "evidence_density":2,
+    "key_health_finding":"Volga and Dnieper routes hub; exposure to steppe zoonotic disease ecology",
+    "primary_evidence_type":"Settlement Archaeology",
+    "dietary_profile":"Mixed/Terrestrial",
+    "violence_level":"Moderate",
+    "notable_pathogen":"Zoonotic disease (inferred from ecology)",
+    "population_estimate":"",
+    "period_active":"859–1100",
+    "notes":"Major Rus trade city; Varangian Guard recruitment"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.52,50.45 ]
+    },
+    "properties": {
+    "site_name":"Kyiv (Kœnugarðr)",
+    "region":"Eastern Routes",
+    "subregion":"Ukraine",
+    "site_type":"Trade Route Node/Capital",
+    "evidence_density":2,
+    "key_health_finding":"Rus Khaganate center; diverse disease ecology from steppe, Byzantine, and Scandinavian contact",
+    "primary_evidence_type":"Historical/Settlement Archaeology",
+    "dietary_profile":"Mixed",
+    "violence_level":"High",
+    "notable_pathogen":"",
+    "population_estimate":"",
+    "period_active":"880–1100",
+    "notes":"Capital of Kievan Rus; Varangian-Slavic ruling class"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.98,41.01 ]
+    },
+    "properties": {
+    "site_name":"Constantinople (Miklagarðr)",
+    "region":"Eastern Routes",
+    "subregion":"Byzantine Empire",
+    "site_type":"Trade/Military Destination",
+    "evidence_density":1,
+    "key_health_finding":"Varangian Guard destination; exposure to Mediterranean disease ecology including plague, malaria, dysentery",
+    "primary_evidence_type":"Historical Sources",
+    "dietary_profile":"Mediterranean",
+    "violence_level":"High (military service)",
+    "notable_pathogen":"Plague, malaria (Mediterranean exposure)",
+    "population_estimate":"",
+    "period_active":"860–1100",
+    "notes":"End point of eastern routes; Varangian Guard formed 988 CE"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.4,43.37 ]
+    },
+    "properties": {
+    "site_name":"A Coruña / Galicia Coast",
+    "region":"Iberian Peninsula",
+    "subregion":"Kingdom of Asturias (Spain)",
+    "site_type":"Raid Target / Coastal",
+    "evidence_density":2,
+    "key_health_finding":"First recorded Viking raid in Iberia 844 CE; repulsed by Ramiro I near Tower of Hercules. Raids continued through 1015 CE including 968 CE sacking of Santiago de Compostela.",
+    "primary_evidence_type":"Galician & Asturian Chronicles",
+    "dietary_profile":"Unknown (raid context)",
+    "violence_level":"High (military raid)",
+    "notable_pathogen":"Dysentery; enteric disease (inferred)",
+    "population_estimate":"",
+    "period_active":"844–1015 CE",
+    "notes":"No Norse skeletal evidence from this region — evidence density reflects chronicle quality only"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.14,38.72 ]
+    },
+    "properties": {
+    "site_name":"Lisbon (al-Ushbuna)",
+    "region":"Iberian Peninsula",
+    "subregion":"al-Andalus (Portugal)",
+    "site_type":"Raid Target / Occupied",
+    "evidence_density":2,
+    "key_health_finding":"Occupied 13 days in 844 CE en route to Seville; raided again in subsequent campaigns. Norse crews exposed to Iberian summer disease ecology and unfamiliar enteric pathogens.",
+    "primary_evidence_type":"Arab Chronicles (Ibn Hayyan; al-Ya'qubi)",
+    "dietary_profile":"Unknown (raid context)",
+    "violence_level":"High (military occupation)",
+    "notable_pathogen":"Enteric disease; dysentery (inferred)",
+    "population_estimate":"",
+    "period_active":"844–966 CE",
+    "notes":"Al-Ya'qubi and Ibn al-Qutiya document the 844 raid. No Norse osteological evidence from Iberia."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.99,37.39 ]
+    },
+    "properties": {
+    "site_name":"Seville — Guadalquivir Marshes",
+    "region":"Iberian Peninsula",
+    "subregion":"al-Andalus (Spain)",
+    "site_type":"Raid Target / Occupied",
+    "evidence_density":2,
+    "key_health_finding":"Sacked Oct. 844 CE; Norse base on Isla Menor in endemic malaria marshes. Immunologically naive Norse crews in Guadalquivir wetlands through autumn. Retaken by Umayyad forces Nov. 844 CE.",
+    "primary_evidence_type":"Arab Chronicles / Disease Ecology Inference",
+    "dietary_profile":"Unknown (raid context)",
+    "violence_level":"High (intense urban combat; heavy Norse losses)",
+    "notable_pathogen":"Malaria — Plasmodium (endemic Guadalquivir wetlands; naive Norse hosts)",
+    "population_estimate":"",
+    "period_active":"844 CE; 859–860 CE (Björn Ironside)",
+    "notes":"Malaria endemic in Guadalquivir wetlands throughout medieval period (Newfield 2017, Early Medieval Europe)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.6,35.9 ]
+    },
+    "properties": {
+    "site_name":"Strait of Gibraltar / Björn Ironside",
+    "region":"Iberian Peninsula",
+    "subregion":"al-Andalus coast / Maghreb approaches",
+    "site_type":"Expedition / Raid",
+    "evidence_density":1,
+    "key_health_finding":"859–860 CE expedition by Björn Ironside and Hastein; reached North Africa (Nekor, Morocco) and the western Mediterranean — farthest Norse penetration into Mediterranean disease ecology.",
+    "primary_evidence_type":"Norse Sagas / Arab Chronicles",
+    "dietary_profile":"Unknown (expedition context)",
+    "violence_level":"High (raid)",
+    "notable_pathogen":"Malaria; North African enteric pathogens (inferred)",
+    "population_estimate":"",
+    "period_active":"859–860 CE",
+    "notes":"Maximum Norse exposure to Mediterranean/North African disease environments. Possibly reached Rhône delta and Catalonia."
+    }
+  }
+]
+}
