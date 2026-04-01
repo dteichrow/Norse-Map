@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norse Health Atlas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #map { height: 600px; }
+        .toggle { margin: 20px; }
+        .panel { position: absolute; top: 10px; right: 10px; background: white; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="toggle">
+        <button id="themeToggle">Toggle Theme</button>
+    </div>
+    <div id="map"></div>
+    <div class="panel" id="detailPanel">
+        <h3>Details</h3>
+        <p id="details">Select a region on the map.</p>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        const SITES = [
+            { name: "Site A", coords: [60.1695, 24.9354], type: "Region 1" },
+            { name: "Site B", coords: [60.2055, 24.6558], type: "Region 2" }
+        ];
+
+        const map = L.map('map').setView([60.2, 24.7], 8);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
+
+        SITES.forEach(site => {
+            const marker = L.marker(site.coords).addTo(map);
+            marker.bindPopup(site.name);
+            marker.on('click', () => {
+                document.getElementById('details').innerText = site.name + ' - ' + site.type;
+            });
+        });
+
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
