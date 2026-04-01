@@ -3,45 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Norse Health Atlas</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Norse World Health Atlas</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        #map { height: 600px; }
-        .toggle { margin: 20px; }
-        .panel { position: absolute; top: 10px; right: 10px; background: white; padding: 10px; }
+        :root {
+            --background-color: #fff;
+            --text-color: #000;
+        }
+        [data-theme="dark"] {
+            --background-color: #333;
+            --text-color: #fff;
+        }
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        /* Additional CSS for layout and styling */
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
-    <div class="toggle">
-        <button id="themeToggle">Toggle Theme</button>
+    <h1>Norse World Health Atlas</h1>
+    <button id="themeToggle">Toggle Theme</button>
+    <div id="map" style="height: 600px;"></div>
+    <div id="sidePanel">
+        <h2>Site Information</h2>
+        <div id="siteDetails">No site selected.</div>
+        <!-- Collapsible panel for site information -->
     </div>
-    <div id="map"></div>
-    <div class="panel" id="detailPanel">
-        <h3>Details</h3>
-        <p id="details">Select a region on the map.</p>
-    </div>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-        const SITES = [
-            { name: "Site A", coords: [60.1695, 24.9354], type: "Region 1" },
-            { name: "Site B", coords: [60.2055, 24.6558], type: "Region 2" }
+        const map = L.map('map').setView([60.4720, 8.4689], 5);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        const healthSites = [
+            { lat: 60.0, lon: 10.0, name: 'Site A', evidence: 'Dense', pathogens: 'None', diet: 'Mixed', violence: 'Low' },
+            { lat: 61.0, lon: 11.0, name: 'Site B', evidence: 'Sparse', pathogens: 'Bacteria', diet: 'Fruits', violence: 'High' },
+            // ... Additional sites data here
         ];
 
-        const map = L.map('map').setView([60.2, 24.7], 8);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
-
-        SITES.forEach(site => {
-            const marker = L.marker(site.coords).addTo(map);
-            marker.bindPopup(site.name);
-            marker.on('click', () => {
-                document.getElementById('details').innerText = site.name + ' - ' + site.type;
-            });
+        healthSites.forEach(site => {
+            const marker = L.marker([site.lat, site.lon]).addTo(map);
+            marker.bindPopup(`<b>${site.name}</b><br>Evidence: ${site.evidence}<br>Pathogens: ${site.pathogens}<br>Diet: ${site.diet}<br>Violence: ${site.violence}`);
         });
 
         document.getElementById('themeToggle').addEventListener('click', () => {
-            document.body.classList.toggle('dark');
+            document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
         });
+
+        // Functionality for interactive filters and trade routes visualization
     </script>
 </body>
 </html>
