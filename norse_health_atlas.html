@@ -4,56 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Norse World Health Atlas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond">
     <style>
-        :root {
-            --background-color: #fff;
-            --text-color: #000;
-        }
-        [data-theme="dark"] {
-            --background-color: #333;
-            --text-color: #fff;
-        }
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
-        /* Additional CSS for layout and styling */
+        body { font-family: 'EB Garamond', serif; }
+        .dark-theme { background-color: #121212; color: #ffffff; }
+        .light-theme { background-color: #ffffff; color: #000000; }
+        /* additional styles for sidebar, filters, etc. */
     </style>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
-    <h1>Norse World Health Atlas</h1>
-    <button id="themeToggle">Toggle Theme</button>
-    <div id="map" style="height: 600px;"></div>
-    <div id="sidePanel">
-        <h2>Site Information</h2>
-        <div id="siteDetails">No site selected.</div>
-        <!-- Collapsible panel for site information -->
-    </div>
+    <header>
+        <h1>Norse World Health Atlas</h1>
+        <button id="theme-toggle">Toggle Dark/Light Theme</button>
+    </header>
+    <aside id="sidebar">
+        <h2>Site Details</h2>
+        <div id="site-info"></div>
+    </aside>
+    <main>
+        <h2>Viking Age Health Sites</h2>
+        <div>
+            <label for="region-filter">Choose a region:</label>
+            <select id="region-filter">
+                <option value="all">All</option>
+                <option value="scandinavia">Scandinavia</option>
+                <option value="iceland">Iceland</option>
+                <option value="greenland">Greenland</option>
+                <option value="n-atlantic">N. Atlantic</option>
+                <option value="british-isles">British Isles</option>
+                <option value="eastern-routes">Eastern Routes</option>
+                <option value="normandy">Normandy</option>
+                <option value="iberia">Iberia</option>
+            </select>
+        </div>
+        <div id="map"></div>
+        <div id="legend">
+            <h3>Legend</h3>
+            <!-- legend showing regions and evidence density -->
+        </div>
+        <div id="trade-routes">
+            <!-- Visualization of trade routes -->
+        </div>
+    </main>
     <script>
-        const map = L.map('map').setView([60.4720, 8.4689], 5);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-        }).addTo(map);
-
-        const healthSites = [
-            { lat: 60.0, lon: 10.0, name: 'Site A', evidence: 'Dense', pathogens: 'None', diet: 'Mixed', violence: 'Low' },
-            { lat: 61.0, lon: 11.0, name: 'Site B', evidence: 'Sparse', pathogens: 'Bacteria', diet: 'Fruits', violence: 'High' },
-            // ... Additional sites data here
-        ];
-
-        healthSites.forEach(site => {
-            const marker = L.marker([site.lat, site.lon]).addTo(map);
-            marker.bindPopup(`<b>${site.name}</b><br>Evidence: ${site.evidence}<br>Pathogens: ${site.pathogens}<br>Diet: ${site.diet}<br>Violence: ${site.violence}`);
+        // JavaScript for handling theme toggle, filters, collapsible panels, and other interactivity
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('light-theme');
         });
-
-        document.getElementById('themeToggle').addEventListener('click', () => {
-            document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-        });
-
-        // Functionality for interactive filters and trade routes visualization
+        // more interactivity code...
     </script>
 </body>
 </html>
