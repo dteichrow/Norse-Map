@@ -372,6 +372,18 @@ html, body {
   .map-shifted #map { right: 0; }
   #filters { display: none; }
   #legend { bottom: var(--space-4); left: var(--space-4); min-width: 160px; }
+  #legend-close {
+    background: none; border: none; color: var(--text-muted);
+    font-size: 0.9rem; cursor: pointer; padding: 0; line-height: 1;
+  }
+  #legend-close:hover { color: var(--text); }
+  #legend-open {
+    display: none; position: fixed; bottom: var(--space-4); left: var(--space-4);
+    z-index: 900; background: var(--surface); color: var(--accent);
+    border: 1px solid var(--accent); border-radius: var(--radius-sm);
+    padding: var(--space-2) var(--space-3); font-size: var(--text-xs);
+    font-family: var(--font-display); letter-spacing: 0.1em; cursor: pointer;
+  }
 }
 </style>
 </head>
@@ -486,8 +498,14 @@ html, body {
 </aside>
 
 <!-- ── LEGEND ── -->
+<button id="legend-open" aria-label="Show map key">MAP KEY</button>
+
 <div id="legend" role="note" aria-label="Map legend">
-  <h3>Map Key</h3>
+
+  <h3 style="display:flex;justify-content:space-between;align-items:center;">
+    Map Key
+    <button id="legend-close" aria-label="Close legend">✕</button>
+  </h3>
 
   <div class="legend-section">
     <div class="legend-section-title">Region</div>
@@ -794,6 +812,15 @@ themeToggle.addEventListener('click', () => {
 
 // ─── HINT TIMEOUT ───
 setTimeout(() => { if(!hintHidden){ hint.classList.add('hidden'); hintHidden=true; }}, 5000);
+  // Legend toggle
+(function(){
+  var leg   = document.getElementById('legend');
+  var close = document.getElementById('legend-close');
+  var open  = document.getElementById('legend-open');
+  close.addEventListener('click', function(){ leg.style.display='none';  open.style.display='block'; });
+  open.addEventListener('click',  function(){ leg.style.display='';      open.style.display='none';  });
+  if(window.innerWidth < 600){ leg.style.display='none'; open.style.display='block'; }
+})();
 </script>
 </body>
 </html>
